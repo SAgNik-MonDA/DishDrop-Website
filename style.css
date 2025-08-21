@@ -81,6 +81,20 @@ img {
     margin-top: 0.5rem;
 }
 
+.m-auto{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* header style */
 
 .navbar {
@@ -312,16 +326,59 @@ h4 {
 
 
 
+/* section 4*/
+
+.app-container{
+    background: var(--hint-yellow);
+    padding: 3rem 6rem;
+    border-radius: 3rem;
+}
+.app-container .content h2{
+    font-size: 4rem;
+}
+
+.app-container .image-container img{
+    width: 25rem;
+    
+}
 
 
+/* section 5 */
 
+.input-container{
+    width: 43rem;
+    max-width: 100%;
+    background: var(--pure-white);
+    padding: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 8px;
+    border-radius: 1rem;
+    margin: 4rem auto 0 auto;
+}
+
+
+input[type="email"]{
+    flex: 1;
+    height: 7vh;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+input[type="email"]:focus{
+    outline: none;
+}
 
 
 
 
 /* footer style */
 
-
+.footer-container{
+    margin-top: 10rem;
+    padding-block: 4rem;
+    background: var(--hint-yellow);
+}
 
 
 
@@ -396,5 +453,13 @@ h4 {
 
     .service-card p {
         font-size: 1.5rem;
+    }
+
+    /* section 4 */
+    .app-container{
+        padding: 2.2rem;
+    }
+    .app-container .content h2{
+        font-size: 3.5rem;
     }
 }
