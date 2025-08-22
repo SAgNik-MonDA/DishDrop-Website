@@ -85,11 +85,9 @@ img {
     margin: auto;
 }
 
-
-
-
-
-
+.mt-one-half{
+    margin-top: 1.5rem;
+}
 
 
 
@@ -378,14 +376,33 @@ input[type="email"]:focus{
     margin-top: 10rem;
     padding-block: 4rem;
     background: var(--hint-yellow);
+
+}
+
+.footer-wrapper{
+    flex: 1;
+
 }
 
 
+.footer-wrapper .social-icon{
+    background: var(--pure-white);
+}
 
 
+.footer-wrapper .social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
 
 
-
+.footer-link{
+    color: gray;
+    font-size: 1.1rem;
+}
+.footer-link:hover{
+    color: var(--lead);
+}
 
 
 /* media queries */
