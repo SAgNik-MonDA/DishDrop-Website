@@ -96,7 +96,7 @@ const addToCart = (product) => {
      <h4 class="product">${product.name}</h4>
      <h4 class="item-total">${product.price}</h4>
      </div>
-     <div class=" item-quantity">
+     <div class="item-quantity">
      <a href="#" class="quantity-btn">
      <i class="fa-solid fa-minus"></i>
      </a>
