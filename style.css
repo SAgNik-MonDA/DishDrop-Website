@@ -351,9 +351,7 @@ h4 {
     background: var(--eye-ball);
 }
 
-.item .detail{
-    flex: 2;
-}
+
 .item .item-image img{
     width: 5rem;
 }
