@@ -58,6 +58,7 @@ if (closeBtn && cartTab) {
 
 
 let productList = [];
+let cartProduct=[];
 const showCards = () => {
     productList.forEach(product => {
         const orderCard = document.createElement('div');
@@ -85,6 +86,19 @@ const showCards = () => {
 
 
 const addToCart = (product) => {
+
+    const existingProduct = cartProduct.find(item => 
+        item.id === product.id
+    );
+    if(existingProduct){
+        alert("Item already in our cart!!");
+        return;
+    }
+
+    cartProduct.push(product);
+    let quantity = 1;
+
+
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
 
@@ -97,17 +111,25 @@ const addToCart = (product) => {
      <h4 class="item-total">${product.price}</h4>
      </div>
      <div class="item-quantity">
-     <a href="#" class="quantity-btn">
+     <a href="#" class="quantity-btn minus">
      <i class="fa-solid fa-minus"></i>
      </a>
-    <h4 class="quantity-value">1</h4>
-    <a href="#" class="quantity-btn">
+    <h4 class="quantity-value">${quantity}</h4>
+    <a href="#" class="quantity-btn plus">
     <i class="fa-solid fa-plus"></i>
    </a>
    </div>
     `;
 
     cartList.appendChild(cartItem);
+
+    const plusBtn = cartItem.querySelector('.plus');
+    const quantityValue = cartItem.querySelector('.quantity-value');
+    plusBtn.addEventListener('click',(e)=>{
+        e.preventDefault();
+        quantity++;
+        quantityValue.textContent = quantity;
+    })
 }
 
 
