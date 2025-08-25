@@ -129,6 +129,14 @@ const addToCart = (product) => {
         e.preventDefault();
         quantity++;
         quantityValue.textContent = quantity;
+    });
+
+     const plusBtn1 = cartItem.querySelector('.minus');
+    const quantityValue1 = cartItem.querySelector('.quantity-value');
+    plusBtn1.addEventListener('click',(e)=>{
+        e.preventDefault();
+        quantity--;
+        quantityValue1.textContent = quantity;
     })
 }
 
